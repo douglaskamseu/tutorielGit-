@@ -7,6 +7,8 @@
 package javaapplication17;
 
 import java.awt.Frame;
+import java.awt.event.WindowEvent;
+import java.awt.event.WindowListener;
 import java.util.Observer;
 
 
@@ -14,7 +16,7 @@ import java.util.Observer;
  *
  * @author Douglas Kamseu
  */
-public class JavaApplication17 extends Frame {
+public class JavaApplication17 extends Frame implements WindowListener {
 
     /**
      * @param args the command line arguments
@@ -25,7 +27,7 @@ public class JavaApplication17 extends Frame {
 	
 	public JavaApplication17() {
 		super();
-		
+		this.addWindowListener(this);
 		Modele modl = new Modele();
 		Controleur ctrl = new Controleur(modl); 
 		Vue vue = new Vue();
@@ -36,5 +38,33 @@ public class JavaApplication17 extends Frame {
 		this.pack();
 		this.setVisible(true);
 	}
+
+    @Override
+    public void windowOpened(WindowEvent e) {
+    }
+
+    @Override
+    public void windowClosing(WindowEvent e) {
+    System.exit(0);
+    }
+
+    @Override
+    public void windowClosed(WindowEvent e) { }
+
+    @Override
+    public void windowIconified(WindowEvent e) {
+    }
+
+    @Override
+    public void windowDeiconified(WindowEvent e) {
+    }
+
+    @Override
+    public void windowActivated(WindowEvent e) {
+    }
+
+    @Override
+    public void windowDeactivated(WindowEvent e) {
+    }
     }
     
