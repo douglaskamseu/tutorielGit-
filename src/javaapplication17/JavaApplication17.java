@@ -33,7 +33,7 @@ public class JavaApplication17 extends Frame implements WindowListener {
 		Vue vue = new Vue();
 		modl.addObserver((Observer) vue);
 		vue.addActionListener(ctrl);
-		this.setTitle("tutoriel git");
+		this.setTitle("Hello world!");
 		this.add(vue);
 		this.pack();
 		this.setVisible(true);
