@@ -37,6 +37,7 @@ public class JavaApplication17 extends Frame implements WindowListener {
 		this.add(vue);
 		this.pack();
 		this.setVisible(true);
+                setLocationRelativeTo(null);
 	}
 
     @Override
