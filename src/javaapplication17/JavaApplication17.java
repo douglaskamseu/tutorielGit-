@@ -34,7 +34,6 @@ public class JavaApplication17 extends Frame implements WindowListener {
 		modl.addObserver((Observer) vue);
 		vue.addActionListener(ctrl);
 		this.setTitle("Git GIT");
-		this.add(vue);
 		this.pack();
 		this.setVisible(true);
                 setLocationRelativeTo(null);
